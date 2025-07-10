@@ -1,0 +1,66 @@
+.processSection {
+  padding: 3rem 1rem;
+  background: var(--color-background);
+}
+
+.heading {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.processList {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .processList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.processItem {
+  background: var(--color-gradient);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.processItem:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+.icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.stepTitle {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-background);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stepDescription {
+  margin: 0;
+  color: var(--color-background);
+  font-size: 1.1rem;
+}
