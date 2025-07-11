@@ -1,0 +1,117 @@
+.featuresSection {
+  padding: 3rem 1rem;
+  background: var(--color-background);
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.featureList {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  gap: 1.5rem;
+}
+
+.featureItem {
+  background: var(--color-gradient);
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.6);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.featureButton {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  transition: background 0.2s;
+  position: relative;
+}
+
+.activeFeature{
+  background: var(--color-background);
+}
+
+.featureButton:hover {
+  background: var(--color-background);
+}
+
+.arrowRight {
+  display: flex;
+  align-items: center;
+  color: var(--color-background);
+}
+
+.featureButton:hover .arrowRight {
+  color: var(--color-primary);
+}
+
+.activeFeatureArrow{
+    color: var(--color-primary);
+}
+
+.featureTitle {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.featurePanel {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--color-background);
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.featureImage {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  background: #f3f4f6;
+}
+
+.featureDescription {
+  flex: 1;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .featurePanel {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .featureImage {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+}

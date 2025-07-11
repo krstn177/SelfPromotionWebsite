@@ -5,13 +5,13 @@ export const AboutMe = () => {
     <section className={styles.aboutSection}>
       <div className={styles.profilePicWrapper}>
         <img
-          src="/assets/profile.jpg" // Place your profile picture in public/assets or src/assets
+          src="/images/profile-pic.webp" // Place your profile picture in public/assets or src/assets
           alt="Profile"
           className={styles.profilePic}
         />
       </div>
       <div className={styles.aboutContent}>
-        <h2 className={styles.heading}>About Me</h2>
+        <h2 className={styles.heading}>Кой съм аз?</h2>
         <p className={styles.text}>
           Hi! I’m [Your Name], a passionate web developer with a love for clean design and modern web technologies.
           I specialize in building fast, accessible, and visually appealing websites for clients who want to stand out online.

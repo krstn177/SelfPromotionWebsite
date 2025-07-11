@@ -32,25 +32,28 @@
 }
 
 .heading {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
   color: var(--color-background);
   margin-bottom: 1rem;
   font-weight: 800;
 }
 
 .text {
-  color: #dbdbdb;
+  color: var(--color-background);
   font-size: 1.15rem;
   margin-bottom: 1rem;
   line-height: 1.7;
 }
 
 @media (max-width: 700px) {
+  .heading, .text{
+    text-align: center;
+  }
   .aboutSection {
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem 0.5rem;
-    border-radius: 1.2rem;
+    padding: 2rem 1rem;
   }
   .profilePic {
     width: 120px;

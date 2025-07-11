@@ -3,6 +3,7 @@ import { Landing } from './Landing/Landing'
 import { Process } from './Process/Process'
 import { Showcase } from './Showcase/Showcase'
 import { Separator } from './Separator/Separator'
+import { Features } from './Features/Features'
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <AboutMe />
         <Separator fill="var(--color-text)" bgColor="var(--color-secondary)" />
         <Showcase />
+        <Features />
     </>
   )
 }
