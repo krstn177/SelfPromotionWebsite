@@ -28,7 +28,7 @@
 }
 
 .card {
-  background: var(--color-gradient);
+  text-decoration: none;
   border-radius: 1rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.32);
   /* overflow: hidden; */
@@ -101,10 +101,6 @@
   transition: all 0.5s;
 }
 
-.button:hover, 
-.button:active {
-  background: var(--color-text);
-  color: var(--color-background);
-  border-color: var(--color-background);
-
+.button:hover {
+  cursor: pointer;
 }

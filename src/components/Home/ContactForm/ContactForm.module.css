@@ -1,0 +1,175 @@
+.ContactSection {
+    padding: 4rem max(2rem, min(6rem, 5%));
+    min-height: 800px;
+    background: var(--color-gradient);
+    font-family: 'Manrope', sans-serif;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--color-background);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.undertitle {
+    font-size: 2.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.order {
+    width: 60%;
+    margin: 40px auto;
+    padding: 2rem;
+    background: var(--color-background);
+    border: 2px solid var(--color-text);
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.txtEtc {
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.alertText{
+    color: red;
+}
+
+.createSubmitBtn {
+    all: unset;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--color-background);
+    border: 3px solid var(--color-text);
+    color: var(--extra-color);
+    border-radius: 10px;
+    padding: 4px 20px;
+    text-align: center;
+    margin-top: 2rem;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.4s, border 0.4s;
+    text-transform: uppercase;
+}
+
+.createSubmitBtn:hover {
+    cursor: pointer;
+    background-color: var(--color-text);
+    border: 3px solid var(--color-background);
+    color: var(--color-background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.alertDiv {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+}
+
+.responseImg {
+    max-width: 600px;
+    min-width: 200px;
+}
+
+.spinner {
+    width: 300px;
+    height: 300px;
+    font-size: 3rem;
+    color: var(--color-secondary);
+}
+
+/* Override Bootstrap styles */
+:global(.form-control) {
+    border: 2px solid var(--color-text);
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+:global(.form-floating > textarea.form-control) {
+    height: unset;
+}
+
+:global(.form-control:focus) {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 0.25rem rgba(80, 54, 69, 0.25);
+}
+
+:global(.form-check-input) {
+  background-color: #ffe5ec;
+  border: 2px solid var(--color-text);
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+:global(.form-check-input:focus) {
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 0 0.15rem rgba(22, 22, 43, 0.15);
+}
+
+:global(.form-check-input:checked) {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 0.15rem rgba(99,102,241,0.15);
+}
+
+@media(max-width: 1200px) {
+    .title {
+        font-size: 3.5rem;
+    }
+    .order {
+        width: 80%;
+    }
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+    .order {
+        width: 100%;
+    }
+}
+
+@media(max-width: 730px) {
+    .ContactSection {
+        padding: 2rem 1rem;
+    }
+    .createSubmitBtn {
+        font-size: 1.5rem;
+        padding: 5px 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tuple {
+        display: block;
+    }
+    .part {
+        display: block;
+        width: 100%;
+    }
+}

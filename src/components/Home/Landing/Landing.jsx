@@ -1,5 +1,4 @@
 import styles from './Landing.module.css'
-import { Link } from 'react-router-dom'
 
 export const Landing = () => {
   return (
@@ -8,9 +7,9 @@ export const Landing = () => {
         <h1 className={styles.title}>ФУНИИ, КОИТО ПРОДАВАТ</h1>
         <p className={styles.subtitle}>Ще Ви съдействам в изработката на уебсайт, който гарантирано ще носи резултати</p>
         <div className={styles.heroButtons}>
-          <Link to="/diary" className={styles.ctaButton}>
+          <a href="#question-form" className={styles.ctaButton}>
             Направи запитване
-          </Link>
+          </a>
         </div>
       </div>
       <div className={styles.heroImage}>

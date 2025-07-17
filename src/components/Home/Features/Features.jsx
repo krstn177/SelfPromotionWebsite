@@ -3,19 +3,40 @@ import styles from "./Features.module.css";
 
 const featuresData = [
   {
-    title: "Lead Capture",
-    image: "/assets/lead-capture.jpg",
+    title: "Hero Секция",
+    image: "/images/SectionsShowcase/Hero-example.webp",
     description: "Easily collect leads with optimized forms and automated follow-ups. Increase conversion rates and grow your audience.",
+    aspectRatio: "2/1",
   },
   {
-    title: "Automated Email Sequences",
-    image: "/assets/email-sequence.jpg",
+    title: "За продукта Ви",
+    image: "/images/SectionsShowcase/About-example.webp",
     description: "Set up automated email campaigns to nurture leads and drive sales, all with minimal effort.",
+    aspectRatio: "2/1",
   },
   {
-    title: "Analytics & Tracking",
-    image: "/assets/analytics.jpg",
+    title: "Пример/Съдържание на продукта",
+    image: "/images/SectionsShowcase/Contents-example.webp",
     description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    aspectRatio: "16/9",
+  },
+  {
+    title: "Секции за бонуси",
+    image: "/images/SectionsShowcase/bonus-example.webp",
+    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    aspectRatio: "2/1",
+  },
+  {
+    title: "Форма за поръчка",
+    image: "/images/SectionsShowcase/Order-form-example.webp",
+    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    aspectRatio: "2/1",
+  },
+  {
+    title: "Страници с условията на сайта",
+    image: "/images/SectionsShowcase/legal-example.webp",
+    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    aspectRatio: "4/3",
   },
 ];
 
@@ -28,7 +49,7 @@ export const Features = () => {
 
   return (
     <section className={styles.featuresSection}>
-      <h2 className={styles.heading}>Main Funnel Features</h2>
+      <h2 className={styles.heading}>ОСНОВНИ СЕКЦИИ НА САЙТА ВИ</h2>
       <div className={styles.featureList}>
         {featuresData.map((feature, idx) => (
           <div key={idx} className={styles.featureItem}>
@@ -67,11 +88,13 @@ export const Features = () => {
                 role="region"
                 aria-labelledby={`feature-title-${idx}`}
               >
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className={styles.featureImage}
-                />
+                <div style={{aspectRatio: feature.aspectRatio}} className={styles.featureImageWrapper}>
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className={styles.featureImage}
+                  />
+                </div>
                 <p className={styles.featureDescription}>{feature.description}</p>
               </div>
             )}

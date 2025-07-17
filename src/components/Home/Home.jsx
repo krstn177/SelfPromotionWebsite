@@ -4,6 +4,7 @@ import { Process } from './Process/Process'
 import { Showcase } from './Showcase/Showcase'
 import { Separator } from './Separator/Separator'
 import { Features } from './Features/Features'
+import { ContactForm } from './ContactForm/ContactForm'
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
         <Separator fill="var(--color-text)" bgColor="var(--color-secondary)" />
         <Showcase />
         <Features />
+        <ContactForm />
     </>
   )
 }
