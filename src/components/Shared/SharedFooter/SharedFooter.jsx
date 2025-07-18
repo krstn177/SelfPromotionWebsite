@@ -6,7 +6,7 @@ export const SharedFooter = () => {
     <div style={{background: 'var(--color-gradient)', borderTop: '2px solid var(--color-background)'}}>
         <div className="container">
         <footer
-            className="text-center text-lg-start text-white"
+            className="text-center text-lg-start text-white pb-2"
         >
             <div className="container p-4 pb-0">
             <section className="">
@@ -25,13 +25,13 @@ export const SharedFooter = () => {
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className={`text-uppercase mb-4 font-weight-bold ${styles.title}`}>ПРАВИЛА</h6>
                         <p>
-                            <Link to="/madrosti-ot-pepelta/terms" target="_blank" className={`text-white ${styles.otherText}`}>Общи условия</Link>
+                            <Link to="/terms" target="_blank" className={`text-white ${styles.otherText}`}>Общи условия</Link>
                         </p>
                         <p>
-                            <Link to="/madrosti-ot-pepelta/personal-info-rules" target="_blank" className={`text-white ${styles.otherText}`}>Лични данни</Link>
+                            <Link to="/personal-info-rules" target="_blank" className={`text-white ${styles.otherText}`}>Лични данни</Link>
                         </p>
                         <p>
-                            <Link to="/madrosti-ot-pepelta/cookies-policy" target="_blank" className={`text-white ${styles.otherText}`}>Политика за бисквитки</Link>
+                            <Link to="/cookies-policy" target="_blank" className={`text-white ${styles.otherText}`}>Политика за бисквитки</Link>
                         </p>
                     </div>
 

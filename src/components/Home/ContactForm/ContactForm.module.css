@@ -1,6 +1,5 @@
 .ContactSection {
     padding: 4rem max(2rem, min(6rem, 5%));
-    min-height: 800px;
     background: var(--color-gradient);
     font-family: 'Manrope', sans-serif;
 }
@@ -81,7 +80,7 @@
 }
 
 .alertDiv {
-    min-height: 800px;
+    min-height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;

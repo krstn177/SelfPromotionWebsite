@@ -4,7 +4,7 @@ export const Landing = () => {
   return (
     <header className={styles.hero}>
       <div className={styles.heroContent}>
-        <h1 className={styles.title}>ФУНИИ, КОИТО ПРОДАВАТ</h1>
+        <h1 className={styles.title}>ОНЛАЙН ПРОСТРАНСТВО ЗА ТВОЯ БИЗНЕС</h1>
         <p className={styles.subtitle}>Ще Ви съдействам в изработката на уебсайт, който гарантирано ще носи резултати</p>
         <div className={styles.heroButtons}>
           <a href="#question-form" className={styles.ctaButton}>
