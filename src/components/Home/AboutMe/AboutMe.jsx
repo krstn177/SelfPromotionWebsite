@@ -13,11 +13,12 @@ export const AboutMe = () => {
       <div className={styles.aboutContent}>
         <h2 className={styles.heading}>Кой съм аз?</h2>
         <p className={styles.text}>
-          Hi! I’m [Your Name], a passionate web developer with a love for clean design and modern web technologies.
-          I specialize in building fast, accessible, and visually appealing websites for clients who want to stand out online.
+          Здравейте, казвам се Кристиян Гешев и вече над 7 години се развивам активно в областта на програмирането, със силен фокус върху уеб разработката.
+          Образователният ми път започна с пълно отличие в Природоматематическа гимназия, специалност „Приложно програмиране“. Паралелно с училището преминах успешно през над 6 практически модула в академията на СофтУни, където завърших цялостна обучителна пътека по един от водещите езици в уеб програмирането – JavaScript.
         </p>
         <p className={styles.text}>
-          When I’m not coding, you’ll find me exploring new tech, reading, or enjoying the outdoors. Let’s work together to bring your ideas to life!
+          В момента завършвам висшето си образование със специалност „Софтуерно инженерство“, което ми помага да надграждам знанията си в дълбочина и да работя по все по-сложни и ефективни уеб решения.
+          Комбинацията от образование, практически опит и успешно реализирани проекти ми дава увереността да предложа професионално изграждане на вашия уебсайт – модерен, адаптивен и конкурентен в онлайн пространството.
         </p>
       </div>
     </section>

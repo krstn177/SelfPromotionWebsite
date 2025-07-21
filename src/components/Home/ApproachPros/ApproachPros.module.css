@@ -1,0 +1,136 @@
+.sectionContainer {
+    font-family: 'Manrope', sans-serif;
+    background: var(--light-gradient-inverted);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.approachSection {
+  background: transparent;
+  border-radius: 2rem;
+  padding: 0;
+  width: 100%;
+  box-shadow: none;
+}
+
+.heading {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 16px rgba(99,102,241,0.18);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background-color: var(--color-background);
+  border-radius: 1.5rem;
+  box-shadow: 5px 12px 18px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  min-height: 160px;
+}
+
+.timelineItem:nth-child(even) {
+  flex-direction: row-reverse;
+  border-left: none;
+}
+
+.iconBlock {
+  min-width: 80px;
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 0 1.5rem 1.5rem 0;
+  box-shadow: 2px 0 12px rgba(99,102,241,0.10);
+}
+
+.timelineItem:nth-child(even) .iconBlock {
+  border-radius: 1.5rem 0 0 1.5rem;
+  background: var(--color-secondary);
+}
+
+.timelineItem > div:last-child {
+  flex: 1;
+  padding: 2rem 2rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itemTitle {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.timelineItem:nth-child(even) .itemTitle {
+  color: var(--color-secondary);
+}
+
+.example {
+  background: var(--color-secondary);
+  color: var(--color-background);
+  border-radius: 0.7rem;
+  padding: 0.7rem 1rem;
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bulletList {
+  margin: 0.7rem 0 0 0;
+  padding-left: 1.2rem;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 900px) {
+  .timelineItem,
+  .timelineItem:nth-child(even) {
+    flex-direction: column;
+    border-right: none;
+    min-height: unset;
+    max-width: 100%;
+  }
+  .timelineItem:nth-child(even) .iconBlock {
+    border-radius: 0 1.5rem 1.5rem 0;
+    background: var(--color-secondary);
+  }
+  .iconBlock {
+    border-radius: 1.5rem 1.5rem 0 0;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+  .timelineItem > div:last-child {
+    padding: 1.5rem;
+  }
+}

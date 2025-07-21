@@ -1,6 +1,6 @@
 .ContactSection {
     padding: 4rem max(2rem, min(6rem, 5%));
-    background: var(--color-gradient);
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     font-family: 'Manrope', sans-serif;
 }
 

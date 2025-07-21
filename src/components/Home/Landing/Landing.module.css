@@ -2,7 +2,7 @@
 .hero {
   display: flex;
   min-height: 80vh;
-  /* Animated gradient background */
+  font-family: 'Manrope', sans-serif;
   background: linear-gradient(120deg, #2d5a27, #5f8c5a, #2563EB, #6366F1, #9f1312, #000000);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease-in-out infinite;
@@ -95,7 +95,13 @@ background-color: var(--color-text);
 color: var(--color-background);
 }
 
-/* Media Queries */
+
+@media(max-width: 1080px){
+  .title {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero {
     padding: 1rem;

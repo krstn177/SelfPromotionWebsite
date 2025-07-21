@@ -1,0 +1,96 @@
+.sectionContainer {
+    font-family: 'Manrope', sans-serif;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    background: var(--light-gradient);
+
+}
+
+.prosSection {
+  background: var(--color-text);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+
+.heading {
+  color: var(--color-background);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 1.5rem 2rem;
+  text-align: center;
+}
+
+.intro {
+  color: var(--color-background);
+  font-size: 1.15rem;
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.06);
+  padding: 1.2rem 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.benefitTitle {
+  color: var(--color-secondary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.resultBox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--color-secondary);
+  color: var(--color-background);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.resultIcon {
+  font-size: 1.5rem;
+}
+
+.resultText {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .prosSection {
+    padding: 1.5rem 0.5rem;
+  }
+  .benefit {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+  }
+}
