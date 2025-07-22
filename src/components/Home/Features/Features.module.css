@@ -1,6 +1,7 @@
 .featuresSection {
   padding: 3rem 2rem;
   background: var(--color-background);
+  font-family: 'Manrope', sans-serif;
 }
 
 .heading {
@@ -103,8 +104,8 @@
 .featureDescription {
   flex: 1;
   color: var(--color-background);
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 @media (max-width: 900px) {

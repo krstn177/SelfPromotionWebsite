@@ -8,6 +8,8 @@ import { Features } from './Features/Features'
 import { ContactForm } from './ContactForm/ContactForm'
 import { PlatformPros } from './PlatformPros/PlatformPros'
 import { ApproachPros } from './ApproachPros/ApproachPros'
+import { Reviews } from './Reviews/Reviews'
+import { FAQ } from './FAQ/FAQ'
 
 export const Home = () => {
   return (
@@ -21,6 +23,8 @@ export const Home = () => {
         <Separator fill="var(--color-text)" bgColor="var(--color-secondary)" />
         <Showcase />
         <Features />
+        <Reviews />
+        <FAQ />
         <SeparatorInverted fill="var(--color-background)" bgColor="var(--color-primary)" />
         <ContactForm />
     </>

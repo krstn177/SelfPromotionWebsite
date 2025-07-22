@@ -3,39 +3,63 @@ import styles from "./Features.module.css";
 
 const featuresData = [
   {
-    title: "Hero Секция",
+    title: "HERO Секция",
     image: "/images/SectionsShowcase/Hero-example.webp",
-    description: "Easily collect leads with optimized forms and automated follow-ups. Increase conversion rates and grow your audience.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>HERO секцията</strong> е първото нещо, което посетителите виждат при зареждане на сайта. Тя съдържа запомнящо се заглавие, кратко но въздействащо описание на продукта и ясен призив за действие.
+      </p>
+    ),
     aspectRatio: "2/1",
   },
   {
     title: "За продукта Ви",
     image: "/images/SectionsShowcase/About-example.webp",
-    description: "Set up automated email campaigns to nurture leads and drive sales, all with minimal effort.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>За продукта Ви</strong> представя основните предимства, характеристики и ползи от вашия продукт или услуга, като изгражда доверие у посетителите.
+      </p>
+    ),
     aspectRatio: "2/1",
   },
   {
     title: "Пример/Съдържание на продукта",
     image: "/images/SectionsShowcase/Contents-example.webp",
-    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>Пример/Съдържание на продукта</strong> показва реални примери, съдържание или демонстрации, които помагат на клиента да разбере стойността на продукта.
+      </p>
+    ),
     aspectRatio: "16/9",
   },
   {
     title: "Секции за бонуси",
     image: "/images/SectionsShowcase/bonus-example.webp",
-    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>Секции за бонуси</strong> представят допълнителни оферти или подаръци, които увеличават стойността на основния продукт и мотивират клиента да поръча.
+      </p>
+    ),
     aspectRatio: "2/1",
   },
   {
     title: "Форма за поръчка",
     image: "/images/SectionsShowcase/Order-form-example.webp",
-    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>Форма за поръчка</strong> улеснява клиента да направи поръчка или запитване директно от сайта, като събира необходимата информация.
+      </p>
+    ),
     aspectRatio: "2/1",
   },
   {
     title: "Страници с условията на сайта",
     image: "/images/SectionsShowcase/legal-example.webp",
-    description: "Monitor your funnel’s performance with real-time analytics and actionable insights.",
+    description: (
+      <p className={styles.featureDescription}>
+        <strong>Страници с условията на сайта</strong> съдържат важна правна информация – общи условия, политика за поверителност и други, които вдъхват доверие и сигурност.
+      </p>
+    ),
     aspectRatio: "4/3",
   },
 ];
@@ -95,7 +119,7 @@ export const Features = () => {
                     className={styles.featureImage}
                   />
                 </div>
-                <p className={styles.featureDescription}>{feature.description}</p>
+                {feature.description}
               </div>
             )}
           </div>
